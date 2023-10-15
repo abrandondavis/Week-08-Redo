@@ -1,0 +1,234 @@
+:root {
+  --main-color: #980000;
+  --20percent-black: rgba(0, 0, 0, 0.2);
+  --50percent-black: rgba(0, 0, 0, 0.5);
+  --70percent-black: rgba(0, 0, 0, 0.7);
+  --background-color: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(136,136,136,1) 100%);
+}
+
+/* Element Selectors */
+div, body, h1, h2, h3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+}
+
+div {
+  display: block;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+}
+
+
+body {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(136,136,136,1) 100%);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  font-weight: 600;
+  
+}
+p {
+  font-size: 1.5em;
+}
+
+.first-letter::first-letter {
+  initial-letter: 2;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  box-shadow: 3px 3px 0 var(--main-color);
+  margin-right: 4px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+
+a:visited {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+}
+
+thead th {
+  font-size: 1.35em;
+  padding: 5px;
+}
+
+th {
+  border-bottom: solid 3px var(--50percent-black);
+  margin: 0;
+}
+
+tr:nth-child(even) {
+  background-color: var(--20percent-black);
+}
+
+td p {
+  font-size: 1.1em;
+}
+
+ol {
+  font-size: 1.2em;
+  border: solid 3px var(--main-color);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 12px;
+}
+
+label {
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 a {
+  font-size: 1.5em;
+}
+
+
+
+
+/* Class Selectors */
+
+.new-card-head {
+  padding: 5px;
+  border-bottom: solid 3px var(--main-color);
+}
+
+.table-mana-name {
+  font-size: 1.3em;
+  padding: 5px;
+  text-shadow: 1px 1px 1px white;
+}
+
+.table-text {
+  font-size: 1.1em;
+}
+
+.mtg-logo {
+  width: 60%;
+  justify-self: center;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.mana-symbol{
+  width: 50px;
+  height: 50px;
+}
+
+.navbar {
+  background-color: var(--70percent-black);
+  border-bottom: 6px solid #000;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.navlink {
+  color: white;
+  margin-right: 15px;
+  text-shadow: 0 2px 5px silver;
+}
+.navlink:visited {
+  color: white;
+}
+
+/* ID Selectors */
+
+#mana-table {
+  border: solid 3px var(--main-color);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+#index-main-body {
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#booster-main-body {
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#commander-main-body {
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#standard-main-body {
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#new-card-main-body {
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#card-name {
+  display: flex;
+  width: 100%;
+  height: 1.5em;
+  margin: auto;
+  margin-bottom: 15px;
+  box-shadow: inset 2px 2px 4px 1px var(--50percent-black);
+}
+
+#card-effect {
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  height: 60%;
+  margin: auto;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  resize: none;
+  box-shadow: inset 2px 2px 8px 3px var(--50percent-black);
+}
+
+button {
+  background-color: var(--main-color);
+  color: white;
+  height: 45px;
+  width: 90px;
+  border-radius: 25%/50%;
+  box-shadow: inset 2px 2px 4px 2px var(--50percent-black),
+  inset -2px -2px 4px 2px rgba(255, 255, 255, 0.531);
+}

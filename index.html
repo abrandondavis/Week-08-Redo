@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magic The Gathering</title>
+
+  <!-- Minimal styling to ease background color on eyes or make image sizes manageable -->
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<!--
+  Assignment instructions
+  
+# Create a website using only HTML. The website can be anything you like (within school guidelines) if it meets the following criteria:
+### At least 3 pages with links to navigate between all pages present on each page.
+
+
+### 2 different size headers, 
+    a list,
+    3 images,
+    a table,
+    a form.
+-->
+
+<body>
+
+  <!-- Navigation Links -->
+  <ul class="navbar">
+    <a class="navlink" href="./index.html">Home</a> |
+    <a class="navlink" href="./pages/standard-mtg.html">Standard</a> |
+    <a class="navlink" href="./pages/commander.html">Commander</a> |
+    <a class="navlink" href="./pages/booster-draft.html">Booster Draft</a> |
+    <a class="navlink" href="./pages/new-card.html">New Card</a>
+  </ul>
+
+
+  <div id="index-main-body">
+
+    <!-- div tags used and nested to keep things organized in their own little containers -->
+    <div>
+      <!-- tag used to display image -->
+      <img class="mtg-logo" src="./images/mtg_logo.png" alt="Magic the Gathering">
+      <h1>What is Magic the Gathering?</h1>
+      <p class="first-letter">Magic: The Gathering is a popular collectible card game that combines strategy, creativity, and a rich fantasy
+        world. Players assume the roles of powerful wizards and engage in epic battles by using decks of cards
+        representing creatures, spells, and enchantments. The objective is to reduce the opponent's life total to zero
+        while employing tactics, resource management, and a deep understanding of card interactions. With thousands of
+        unique cards and a vibrant community, Magic offers endless possibilities for deck building and gameplay,
+        appealing to both casual gamers and competitive players in various formats. Its immersive lore and
+        ever-expanding universe continue to captivate players, making it a timeless and dynamic card game.
+      </p>
+    </div>
+
+
+    <div>
+      <h2>Popular Formats</h2>
+      <div>
+        <h3><a href="./pages/standard-mtg.html">Standard</a></h3>
+        <p class="first-letter">Standard is a rotating format in Magic: The Gathering, where players can construct decks using cards from the
+          most recent sets, typically the last two years' worth of expansions and core sets. This format encourages
+          adaptability and innovation as the card pool changes over time, ensuring a dynamic and evolving metagame. It's
+          a popular choice for competitive players and offers a balanced environment where strategic deck construction
+          and gameplay skills are paramount. Standard tournaments and events showcase the latest cards and strategies,
+          making it an exciting and ever-changing format for Magic enthusiasts.</p>
+      </div>
+      <div>
+        <h3><a href="./pages/commander.html">Commander</a></h3>
+        <p class="first-letter">Commander, also known as Elder Dragon Highlander (EDH), is a unique and social multiplayer format in Magic:
+          The Gathering. In Commander, each player chooses a legendary creature as their commander and builds a 100-card
+          singleton deck (meaning no duplicate cards except for basic lands). The format encourages creativity and
+          allows for diverse strategies, as players have access to their commander's unique abilities throughout the
+          game. Commander emphasizes social interactions, diplomacy, and epic multiplayer battles, making it a beloved
+          choice for casual and social play. The format is defined by its vibrant community, extensive deck
+          customization options, and a focus on fun and memorable moments.</p>
+      </div>
+      <div>
+        <h3><a href="./pages/booster-draft.html">Booster Draft</a></h3>
+        <p class="first-letter">Booster Draft is a limited format in Magic: The Gathering where players construct their decks in real-time
+          during the event. In a typical Booster Draft, participants are seated in a circle and receive booster packs
+          from the most recent set. They select one card from their pack and pass the remaining cards to their neighbor.
+          This process continues until all the cards are chosen. Players then repeat this process with additional packs,
+          gradually building a 40-card deck. Booster Draft requires quick decision-making, adaptability, and a keen eye
+          for card synergies. It offers a level playing field since everyone starts with random booster packs, making it
+          a popular and competitive format that rewards skill and strategy.</p>
+      </div>
+    </div>
+
+    <div>
+      <h2>The Five-Color System in Magic: The Gathering</h2>
+      <img src="./images/mtg_color_wheel.png" alt="Magic the Gathering color wheel">
+      <p class="first-letter">
+        The five-color system in Magic: The Gathering refers to a player's ability to use mana (the game's primary
+        resource)
+        of any of the five different colors: white, blue, black, red, and green. Each color represents a different
+        magical
+        or thematic aspect of the game and is associated with specific strengths, weaknesses, and playstyles.
+      </p>
+
+      <!-- another list that is not the navigation links -->
+      <table id="mana-table">
+        <thead>
+          <tr>
+            <th>Color</th>
+            <th>Symbol</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-mana-name"><strong>White</strong></td>
+            <td><img src="./images/mana_white.png" class="mana-symbol" alt="mana symbol"></td>
+            <td class="table-text">White mana is associated with concepts of order, healing, protection, and purity. White spells often
+              involve creatures with defensive abilities, lifegain, and removal of threats. White is known for its
+              ability to create protective enchantments and support its allies on the battlefield.</td>
+          </tr>
+          <tr>
+            <td class="table-mana-name"><strong>Blue</strong></td>
+            <td><img src="./images/mana_blue.png" class="mana-symbol" alt="mana symbol"></td>
+            <td class="table-text">Blue mana embodies intelligence, manipulation, and control. Blue spells are focused on card draw,
+              countering opponent's spells, and creating strategic advantages through manipulation of the game's rules.
+              Blue is known for its ability to bounce creatures, draw cards, and control the tempo of a match.</td>
+          </tr>
+          <tr>
+            <td class="table-mana-name"><strong>Black</strong></td>
+            <td><img src="./images/mana_black.png" class="mana-symbol" alt="mana symbol"></td>
+            <td class="table-text">Black mana is associated with dark and destructive forces, including death, decay, and sacrifice. Black
+              spells often involve removal, discard, and reanimation of creatures from the graveyard. Black is known for
+              its willingness to pay life for power and its ability to trade resources for advantages.</td>
+          </tr>
+          <tr>
+            <td class="table-mana-name"><strong>Red</strong></td>
+            <td><img src="./images/mana_red.png" class="mana-symbol" alt="mana symbol"></td>
+            <td class="table-text">Red mana embodies impulsiveness, aggression, and chaos. Red spells are often fast and direct, focusing
+              on direct damage, creature haste, and temporary boosts. Red is known for its ability to burn opponents'
+              life totals quickly and create chaotic, unpredictable gameplay.</td>
+          </tr>
+          <tr>
+            <td class="table-mana-name"><strong>Green</strong></td>
+            <td><img src="./images/mana_green.png" class="mana-symbol" alt="mana symbol"></td>
+            <td class="table-text">Green mana represents nature, growth, and strength. Green spells involve large creatures, mana
+              acceleration, creature buffs, and land-related effects. Green is known for its ability to produce massive
+              creatures, ramp up mana quickly, and overwhelm opponents with sheer force.</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
